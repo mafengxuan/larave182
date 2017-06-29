@@ -5,7 +5,7 @@
 
 	@if (count($errors) > 0)
     <div class="mws-form-message error">
-    		<font size="5">添加失败</font>
+    		<font size="5">修改失败</font>
 	        <ul>
 	            @foreach ($errors->all() as $error)
 	                <li>{{ $error }}</li>

@@ -29,6 +29,8 @@
         <div id="mws-login">
             @if(session('error'))
             <h1>{{ session('error') }}</h1>
+            @elseif(session('success'))
+            <h1>{{ session('success') }}</h1>
             @else 
             <h1>登录</h1>
             @endif
@@ -63,7 +65,11 @@
                     <div class="mws-form-row">
                         <input type="submit" value="登录" class="btn btn-success mws-login-button">
                     </div>
+                
                 </form>
+                <div class="mws-form-row">
+                      <a href='/admin/login/add'><button class="btn btn-info mws-login-button">注册</button></a>
+                    </div>
             </div>
         </div>
     </div>
